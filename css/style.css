@@ -251,6 +251,7 @@ section.area_feature ul {
   justify-content: space-between;
 }
 section.area_feature ul li {
+  width: 30%;
   cursor: pointer;
 }
 section.area_feature ul li div {
@@ -288,11 +289,19 @@ section.area_feature ul li h3 {
 section.area_feature ul li p {
   text-align: center;
   font-size: 14px;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 960px) {
   section.area_feature {
     padding-bottom: 120px;
+  }
+  section.area_feature ul {
+    display: block;
+  }
+  section.area_feature ul li {
+    width: 100%;
+    margin-bottom: 20px;
   }
   section.area_feature ul li::after {
     display: none;
