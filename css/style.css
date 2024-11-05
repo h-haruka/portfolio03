@@ -322,7 +322,9 @@ section.achievement h2 {
 section.area_flow h2::before,
 section.area_flow h2::after,
 section.area_contact h2::before,
-section.area_contact h2::after {
+section.area_contact h2::after,
+section.achievement h2::before,
+section.achievement h2::after {
   border-color: #121212;
 }
 @media screen and (max-width: 960px) {
@@ -508,11 +510,35 @@ section.area_contact ul li.counseling {
 section.achievement {
   padding-bottom: 120px;
 }
+section.achievement .item_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 section.achievement a {
-  line-height: 1.7;
+  display: block;
+  width: 40%;
+  height: 230px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 section.achievement a:hover {
-  text-decoration: underline;
+  opacity: .7;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  transition: all .2s;
+}
+section.achievement a img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 960px) {
+  section.achievement .item_wrap {
+    display: block;
+  }
+  section.achievement a {
+    width: 100%;
+  }
 }
 
 footer {
