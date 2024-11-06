@@ -20,6 +20,8 @@ header {
   box-sizing: border-box;
 }
 header h1 {
+  font-size: 25px;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 header h1 img {
@@ -46,9 +48,11 @@ header .hamburger_wrap {
     z-index: 99;
   }
   header h1 {
+    display: flex;
+    align-items: center;
     width: 180px;
+    height: 100%;
     padding-left: 18px;
-    padding-top: 10px;
   }
   header h1 a img {
     width: 100%;
@@ -203,6 +207,9 @@ section.area_project ul li {
   margin-bottom: 50px;
   border: 1px solid #fff;
 }
+section.area_project ul li:hover {
+  opacity: .7;
+}
 section.area_project ul li img {
   width: 402px;
 }
@@ -210,7 +217,7 @@ section.area_project ul li p {
   position: absolute;
   margin-top: -1.2rem;
   margin-left: 6px;
-  color: #fff;
+  /* color: #fff; */
   font-size: 12px;
   font-weight: bold;
 }
